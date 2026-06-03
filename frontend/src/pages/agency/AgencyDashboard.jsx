@@ -107,7 +107,7 @@ export default function AgencyDashboard() {
 
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
-          <h1 className="font-outfit font-black text-3xl mb-1 flex items-center gap-2 flex-wrap" style={{ color: 'var(--text-primary)' }}>
+          <h1 className="font-outfit font-black text-2xl md:text-3xl mb-1 flex items-center gap-2 flex-wrap" style={{ color: 'var(--text-primary)' }}>
             Welcome back, <span className="gradient-text">{user?.name?.split(' ')[0]}!</span>
             <span className={`badge text-xs font-bold py-1 px-3 ${
               hasActiveSub 
@@ -117,7 +117,7 @@ export default function AgencyDashboard() {
               {planDisplay}
             </span>
           </h1>
-          <p style={{ color: 'var(--text-secondary)' }}>Here's your fleet performance overview.</p>
+          <p className="text-xs md:text-sm" style={{ color: 'var(--text-secondary)' }}>Here's your fleet performance overview.</p>
         </div>
       </div>
 
@@ -128,7 +128,7 @@ export default function AgencyDashboard() {
 
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <div className="lg:col-span-2 glass rounded-2xl p-6">
+        <div className="lg:col-span-2 glass rounded-2xl p-6 min-w-0 overflow-hidden">
           <h3 className="font-outfit font-bold text-lg mb-4" style={{ color: 'var(--text-primary)' }}>Booking Status Overview</h3>
           {pieData.length > 0
             ? <BookingPieChart data={pieData} />
@@ -173,8 +173,8 @@ export default function AgencyDashboard() {
           <div className="space-y-3">
             {pendingBookings.map((b, i) => (
               <motion.div key={b._id} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.07 }}
-                className="flex items-center justify-between p-4 rounded-xl" style={{ background: 'rgba(79,70,229,0.04)' }}>
-                <div className="flex-1 min-w-0 mr-4">
+                className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl" style={{ background: 'rgba(79,70,229,0.04)' }}>
+                <div className="flex-1 min-w-0 sm:mr-4">
                   <p className="font-semibold text-sm" style={{ color: 'var(--text-primary)' }}>{b.vehicleName}</p>
                   <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
                     {b.customerName || b.customerId?.name || 'Unknown Customer'} · {formatDate(b.startDate)} — {formatDate(b.endDate)} · {b.days}d · {formatCurrency(b.totalPrice)}

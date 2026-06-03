@@ -46,7 +46,7 @@ export default function AllBookings() {
 
       {/* Chart */}
       {pieData.length > 0 && (
-        <div className="glass rounded-2xl p-6">
+        <div className="glass rounded-2xl p-6 min-w-0 overflow-hidden">
           <h3 className="font-outfit font-bold text-lg mb-4" style={{ color: 'var(--text-primary)' }}>Status Breakdown</h3>
           <BookingPieChart data={pieData} />
         </div>

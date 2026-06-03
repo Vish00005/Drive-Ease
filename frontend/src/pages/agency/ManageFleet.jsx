@@ -211,10 +211,10 @@ export default function ManageFleet() {
   return (
     <div className="page-transition">
       <ToastContainer toasts={toasts} remove={remove} />
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
         <div>
           <h1
-            className="font-outfit font-black text-3xl mb-1"
+            className="font-outfit font-black text-2xl md:text-3xl mb-1"
             style={{ color: "var(--text-primary)" }}
           >
             Manage <span className="gradient-text">Fleet</span>
@@ -247,7 +247,7 @@ export default function ManageFleet() {
         <button
           id="add-vehicle-btn"
           onClick={openAdd}
-          className="btn-primary flex items-center gap-1.5"
+          className="btn-primary flex items-center justify-center gap-1.5 w-full sm:w-auto flex-shrink-0"
           style={{
             opacity: !isSubscribed || vehicles.length >= fleetLimit ? 0.75 : 1,
           }}
