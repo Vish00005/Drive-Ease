@@ -172,7 +172,7 @@ export default function VehicleDetail() {
               )}
 
               {/* Pricing */}
-              <div className="grid grid-cols-3 gap-3 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
                 {[{ label: 'Daily', key: 'daily' }, { label: 'Weekly', key: 'weekly' }, { label: 'Monthly', key: 'monthly' }]
                   .map(({ label, key }) => (
                     <div key={key} className="glass rounded-2xl p-3 text-center border-2 transition-all"
@@ -207,7 +207,7 @@ export default function VehicleDetail() {
               {/* Date Picker + Booking */}
               <div className="glass rounded-2xl p-5">
                 <h3 className="font-outfit font-bold mb-4" style={{ color: 'var(--text-primary)' }}>Select Rental Period</h3>
-                <div className="grid grid-cols-2 gap-3 mb-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                   <div>
                     <label className="block text-xs font-medium mb-1" style={{ color: 'var(--text-secondary)' }}>Start Date</label>
                     <div className="relative">

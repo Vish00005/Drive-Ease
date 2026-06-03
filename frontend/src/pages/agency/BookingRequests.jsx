@@ -116,7 +116,8 @@ export default function BookingRequests() {
         </div>
       ) : (
         <div className="glass rounded-2xl overflow-hidden">
-          <table className="data-table">
+          <div className="overflow-x-auto">
+            <table className="data-table">
             <thead>
               <tr>
                 <th>Vehicle</th>
@@ -202,6 +203,7 @@ export default function BookingRequests() {
               ))}
             </tbody>
           </table>
+          </div>
         </div>
       )}
     </div>

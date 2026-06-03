@@ -443,8 +443,8 @@ export default function ManageFleet() {
         title={editVehicle ? "Edit Vehicle" : "Add New Vehicle"}
         size="lg"
       >
-        <div className="grid grid-cols-2 gap-4 max-h-[70vh] overflow-y-auto pr-1">
-          <div className="col-span-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[70vh] overflow-y-auto pr-1">
+          <div className="col-span-1 sm:col-span-2">
             <label
               className="block text-xs font-medium mb-1.5"
               style={{ color: "var(--text-secondary)" }}
@@ -508,7 +508,7 @@ export default function ManageFleet() {
               </label>
             )}
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 sm:col-span-2">
             <label
               className="block text-xs font-medium mb-1"
               style={{ color: "var(--text-secondary)" }}
@@ -697,7 +697,7 @@ export default function ManageFleet() {
               className="input-field"
             />
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 sm:col-span-2">
             <label
               className="block text-xs font-medium mb-1"
               style={{ color: "var(--text-secondary)" }}
@@ -744,7 +744,7 @@ export default function ManageFleet() {
               className="input-field"
             />
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 sm:col-span-2">
             <label
               className="block text-xs font-medium mb-1"
               style={{ color: "var(--text-secondary)" }}
@@ -760,7 +760,7 @@ export default function ManageFleet() {
               className="input-field"
             />
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 sm:col-span-2">
             <label
               className="block text-xs font-medium mb-1"
               style={{ color: "var(--text-secondary)" }}
@@ -775,7 +775,7 @@ export default function ManageFleet() {
             />
           </div>
           <div
-            className="col-span-2 flex justify-end gap-3 pt-2 border-t"
+            className="col-span-1 sm:col-span-2 flex justify-end gap-3 pt-2 border-t"
             style={{ borderColor: "var(--surface-border)" }}
           >
             <button onClick={() => setShowModal(false)} className="btn-ghost">

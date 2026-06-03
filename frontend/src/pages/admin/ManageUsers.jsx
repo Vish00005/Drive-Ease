@@ -71,7 +71,8 @@ export default function ManageUsers() {
         <div className="flex justify-center py-24"><Loader2 size={36} className="animate-spin text-primary-500" /></div>
       ) : (
         <div className="glass rounded-2xl overflow-hidden">
-          <table className="data-table">
+          <div className="overflow-x-auto">
+            <table className="data-table">
             <thead><tr><th>User</th><th>Email</th><th>Role</th><th>Location</th><th>Status</th><th>Actions</th></tr></thead>
             <tbody>
               {filtered.map((u, i) => (
@@ -103,6 +104,7 @@ export default function ManageUsers() {
               ))}
             </tbody>
           </table>
+          </div>
           {filtered.length === 0 && <div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>No users found</div>}
         </div>
       )}
