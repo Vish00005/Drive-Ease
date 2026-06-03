@@ -49,8 +49,8 @@ export default function Register() {
               <Car size={22} className="text-white" />
             </div>
             <span className="font-outfit font-black text-2xl">
-              <span className="gradient-text">Drive</span>
-              <span style={{ color: 'var(--text-primary)' }}>Ease</span>
+              <span className="gradient-text">Rent</span>
+              <span style={{ color: 'var(--text-primary)' }}>-Drive</span>
             </span>
           </Link>
           <p className="mt-3 text-sm" style={{ color: 'var(--text-secondary)' }}>Create your account — it's free!</p>

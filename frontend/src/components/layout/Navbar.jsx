@@ -53,8 +53,8 @@ export default function Navbar() {
               <Car size={18} className="text-white" />
             </div>
             <span className="font-outfit font-black text-xl">
-              <span className="gradient-text">Drive</span>
-              <span style={{ color: 'var(--text-primary)' }}>Ease</span>
+              <span className="gradient-text">Rent</span>
+              <span style={{ color: 'var(--text-primary)' }}>-Drive</span>
             </span>
           </Link>
 

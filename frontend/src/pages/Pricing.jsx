@@ -210,7 +210,7 @@ export default function Pricing({ isDashboard = false }) {
                     
                     <div className="flex justify-between items-start z-10">
                       <div>
-                        <span className="text-[10px] font-bold tracking-widest opacity-80 uppercase">DriveEase Premium Partner</span>
+                        <span className="text-[10px] font-bold tracking-widest opacity-80 uppercase">Rent-Drive Premium Partner</span>
                         <h4 className="font-outfit font-black text-xl leading-none mt-1">{activePlanDetails.name}</h4>
                       </div>
                       <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
@@ -405,7 +405,7 @@ export default function Pricing({ isDashboard = false }) {
             Frequently Asked Questions
           </h4>
           <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-            Have questions about billing, changing plans, or refund policies? Visit our support page or get in touch with our partnerships coordinator at partners@driveease.in.
+            Have questions about billing, changing plans, or refund policies? Visit our support page or get in touch with our partnerships coordinator at partners@rent-drive.in.
           </p>
         </div>
       </div>
@@ -530,7 +530,7 @@ export default function Pricing({ isDashboard = false }) {
                   Payment Successful!
                 </h4>
                 <p className="text-xs px-6" style={{ color: 'var(--text-muted)' }}>
-                  Subscription activated. Your plan limits have been instantly updated. Welcome to DriveEase Pro!
+                  Subscription activated. Your plan limits have been instantly updated. Welcome to Rent-Drive Pro!
                 </p>
               </div>
             )}

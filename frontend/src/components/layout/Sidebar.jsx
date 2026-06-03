@@ -31,8 +31,8 @@ export default function Sidebar({ role = 'agency' }) {
           <CarLogo size={16} className="text-white" />
         </div>
         <span className="font-outfit font-black text-lg">
-          <span className="gradient-text">Drive</span>
-          <span style={{ color: 'var(--text-primary)' }}>Ease</span>
+          <span className="gradient-text">Rent</span>
+          <span style={{ color: 'var(--text-primary)' }}>-Drive</span>
         </span>
         {role === 'admin' && (
           <Shield size={14} className="ml-auto text-emerald-500" />

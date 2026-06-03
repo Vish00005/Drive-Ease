@@ -40,8 +40,8 @@ export default function Footer() {
                 <Car size={18} className="text-white" />
               </div>
               <span className="font-outfit font-black text-xl">
-                <span className="gradient-text">Drive</span>
-                <span style={{ color: "var(--text-primary)" }}>Ease</span>
+                <span className="gradient-text">Rent</span>
+                <span style={{ color: "var(--text-primary)" }}>-Drive</span>
               </span>
             </div>
             <p
@@ -133,7 +133,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {[
-                { icon: Mail, text: "support@driveease.in" },
+                { icon: Mail, text: "support@rent-drive.in" },
                 { icon: Phone, text: "+91 1800 123 4567" },
                 { icon: MapPin, text: "Nadiad,Gujarat,India" },
               ].map(({ icon: Icon, text }) => (
@@ -162,7 +162,7 @@ export default function Footer() {
           style={{ borderColor: "var(--surface-border)" }}
         >
           <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-            © {year} DriveEase. All rights reserved.
+            © {year} Rent-Drive. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {["Privacy Policy", "Terms of Service", "Cookie Policy"].map(

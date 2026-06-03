@@ -281,7 +281,7 @@ export default function ManageFleet() {
               style={{ color: "var(--text-secondary)" }}
             >
               Choose a pricing plan to start adding vehicles and listing your
-              fleet on DriveEase.
+              fleet on Rent-Drive.
             </p>
             <button
               onClick={() => navigate("/agency/pricing")}

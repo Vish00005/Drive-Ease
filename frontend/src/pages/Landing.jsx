@@ -290,7 +290,7 @@ export default function Landing() {
             className="text-center mb-14"
           >
             <h2 className="font-outfit font-black text-4xl md:text-5xl mb-4" style={{ color: "var(--text-primary)" }}>
-              Why Choose <span className="gradient-text">DriveEase?</span>
+              Why Choose <span className="gradient-text">Rent-Drive?</span>
             </h2>
             <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--text-secondary)" }}>
               A platform built for the modern renter — fast, reliable, and beautifully designed.
@@ -466,7 +466,7 @@ export default function Landing() {
                 Ready to Hit the Road?
               </h2>
               <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
-                Join 10,000+ happy customers who trust DriveEase for their rental needs.
+                Join 10,000+ happy customers who trust Rent-Drive for their rental needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/register" id="cta-register" className="btn-primary text-base px-10 py-4">

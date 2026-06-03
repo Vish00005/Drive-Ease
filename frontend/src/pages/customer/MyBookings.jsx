@@ -478,7 +478,7 @@ export default function MyBookings() {
 
                 <div className="text-center space-y-1">
                   <p className="text-xs font-semibold" style={{ color: 'var(--text-primary)' }}>
-                    Scan QR to Pay: <span className="font-mono text-indigo-500 font-bold">driveease@upi</span>
+                    Scan QR to Pay: <span className="font-mono text-indigo-500 font-bold">rentdrive@upi</span>
                   </p>
                   <p className="text-[10px]" style={{ color: 'var(--text-muted)' }}>
                     Or pay using any UPI app (GPay, PhonePe, Paytm, BHIM)
@@ -518,7 +518,7 @@ export default function MyBookings() {
                              {[...Array(9)].map((_, idx) => <div key={idx} className="border border-white/50" />)}
                            </div>
                          </div>
-                         <span className="font-outfit font-black italic text-base text-white">DriveEase Pay</span>
+                         <span className="font-outfit font-black italic text-base text-white">Rent-Drive Pay</span>
                        </div>
                        
                        <div className="text-lg font-mono tracking-widest text-white/95 py-2">
@@ -559,7 +559,7 @@ export default function MyBookings() {
                        </div>
                        
                        <div className="text-[8px] text-white/30 leading-none">
-                         Simulated payment for DriveEase. No real transactions are processed.
+                         Simulated payment for Rent-Drive. No real transactions are processed.
                        </div>
                     </div>
                   </div>
