@@ -7,35 +7,38 @@ Rent-Drive is a premium, full-stack vehicle rental marketplace designed to bridg
 ## 🌟 Core Features
 
 ### 👤 Customer Experience
-*   **Dynamic Fleet Catalog**: Browse and search vehicles with filters for type (2-wheeler vs 4-wheeler), transmission (Manual/Automatic), fuel type (Petrol, Diesel, Hybrid, Electric), and maximum daily pricing.
-*   **Real-time Date Range Availability Filter**: Excludes vehicles that have overlapping confirmed/active bookings during the requested trip window.
-*   **Detailed Vehicle Specifications**: View engine size (cc), mileage (kmpl), color, custom features list, reviews, and average rating.
-*   **Secure Payment Checkout Modal**:
-    *   **UPI QR Code**: High-tech QR code with a scanning light animation, displaying transaction details and collecting the UTR transaction reference.
-    *   **3D Interactive Credit Card**: Interactive glassmorphic preview card that updates in real-time and flips to show CVV signature area when the input is focused.
-    *   **Cash at Desk**: Instructions displaying the specific agency counter address and contact phone number.
-*   **Booking Management**: Track active, completed, or pending trips, and review vehicles with star ratings.
+
+- **Dynamic Fleet Catalog**: Browse and search vehicles with filters for type (2-wheeler vs 4-wheeler), transmission (Manual/Automatic), fuel type (Petrol, Diesel, Hybrid, Electric), and maximum daily pricing.
+- **Real-time Date Range Availability Filter**: Excludes vehicles that have overlapping confirmed/active bookings during the requested trip window.
+- **Detailed Vehicle Specifications**: View engine size (cc), mileage (kmpl), color, custom features list, reviews, and average rating.
+- **Secure Payment Checkout Modal**:
+  - **UPI QR Code**: High-tech QR code with a scanning light animation, displaying transaction details and collecting the UTR transaction reference.
+  - **3D Interactive Credit Card**: Interactive glassmorphic preview card that updates in real-time and flips to show CVV signature area when the input is focused.
+  - **Cash at Desk**: Instructions displaying the specific agency counter address and contact phone number.
+- **Booking Management**: Track active, completed, or pending trips, and review vehicles with star ratings.
 
 ### 🏢 Agency Management Console
-*   **Subscription plans**: Tiered subscription plans (Starter, Growth, Enterprise) that restrict maximum fleet sizes (up to 5, 15, or unlimited vehicles respectively).
-*   **Fleet Inventory Management**: Add, edit, or delete vehicles, update pricing structures, and upload image files.
-*   **Interactive Booking Approval**: Accept or reject pending customer requests, view payment methods and customer transaction receipts, and manually activate or end trips.
-*   **Agency Profile Branding**: Customize agency logo/avatar, description, location details, and business email.
+
+- **Subscription plans**: Tiered subscription plans (Starter, Growth, Enterprise) that restrict maximum fleet sizes (up to 5, 15, or unlimited vehicles respectively).
+- **Fleet Inventory Management**: Add, edit, or delete vehicles, update pricing structures, and upload image files.
+- **Interactive Booking Approval**: Accept or reject pending customer requests, view payment methods and customer transaction receipts, and manually activate or end trips.
+- **Agency Profile Branding**: Customize agency logo/avatar, description, location details, and business email.
 
 ### 🛡️ System Administration Portal
-*   **Aggregated Platform Analytics**: Complete status summary showing registered users, total vehicles, system revenue, and booking distributions via interactive Recharts pie charts.
-*   **Agency Registration Approvals**: Review new agency accounts to approve or suspend operations.
-*   **User Account Moderation**: Activate or suspend customer and agency profile log-ins.
+
+- **Aggregated Platform Analytics**: Complete status summary showing registered users, total vehicles, system revenue, and booking distributions via interactive Recharts pie charts.
+- **Agency Registration Approvals**: Review new agency accounts to approve or suspend operations.
+- **User Account Moderation**: Activate or suspend customer and agency profile log-ins.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend** | React (Vite), React Router Dom, Framer Motion, Tailwind CSS, Lucide Icons, Recharts |
-| **Backend** | Node.js, Express, MongoDB (Mongoose ODM), JWT, BcryptJS, CORS |
-| **Tooling & Deploy**| Nodemon, Vercel SPA Rewrites |
+| Layer                | Technologies                                                                        |
+| :------------------- | :---------------------------------------------------------------------------------- |
+| **Frontend**         | React (Vite), React Router Dom, Framer Motion, Tailwind CSS, Lucide Icons, Recharts |
+| **Backend**          | Node.js, Express, MongoDB (Mongoose ODM), JWT, BcryptJS, CORS                       |
+| **Tooling & Deploy** | Nodemon, Vercel SPA Rewrites                                                        |
 
 ---
 
@@ -71,26 +74,26 @@ PROJECT1/
 The database seeding script configures multiple accounts with the default password **`demo123`**:
 
 ### 🛡️ System Administrators
-| Name | Email Login | Password | Location |
-| :--- | :--- | :--- | :--- |
-| Admin User | `admin@demo.com` | `demo123` | Mumbai |
+
+| Name       | Email Login      | Password  | Location |
+| :--------- | :--------------- | :-------- | :------- |
+| Admin User | `admin@demo.com` | `demo123` | Mumbai   |
 
 ### 🏢 Rental Agency Owners
-| Name | Email Login | Password | Location | Agency Partner Brand |
-| :--- | :--- | :--- | :--- | :--- |
-| Rajesh Kumar | `rajesh@demo.com` | `demo123` | Mumbai | Rajesh Motors Rentals |
-| Priya Sharma | `priya@demo.com` | `demo123` | Bangalore | Bangalore Drive Hub |
-| Amit Verma | `amit@demo.com` | `demo123` | Delhi | Delhi Wheels Co. |
+
+| Name         | Email Login       | Password  | Location  | Agency Partner Brand  |
+| :----------- | :---------------- | :-------- | :-------- | :-------------------- |
+| Rajesh Kumar | `rajesh@demo.com` | `demo123` | Mumbai    | Rajesh Motors Rentals |
+| Priya Sharma | `priya@demo.com`  | `demo123` | Bangalore | Bangalore Drive Hub   |
+| Amit Verma   | `amit@demo.com`   | `demo123` | Delhi     | Delhi Wheels Co.      |
 
 ### 👤 Customers
-| Name | Email Login | Password | Location |
-| :--- | :--- | :--- | :--- |
-| Rohan Mehta | `customer@demo.com` | `demo123` | Mumbai |
-| Ananya Iyer | `ananya@demo.com` | `demo123` | Bangalore |
-| Karthik Reddy | `karthik@demo.com` | `demo123` | Hyderabad |
-| Sneha Patel | `sneha@demo.com` | `demo123` | Pune |
-| Vikram Singh | `vikram@demo.com` | `demo123` | Delhi |
-| Divya Nair | `divya@demo.com` | `demo123` | Chennai |
+
+| Name          | Email Login         | Password  | Location  |
+| :------------ | :------------------ | :-------- | :-------- |
+| Rohan Mehta   | `customer@demo.com` | `demo123` | Mumbai    |
+| Ananya Iyer   | `ananya@demo.com`   | `demo123` | Bangalore |
+| Karthik Reddy | `karthik@demo.com`  | `demo123` | Hyderabad |
 
 ---
 
@@ -149,9 +152,8 @@ For single-page routing to function properly on page refreshes when deploying to
 
 ```json
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
 ```
+
 Ensure your Vercel project environment variable `VITE_API_URL` is set to point to your live hosted backend URL.
