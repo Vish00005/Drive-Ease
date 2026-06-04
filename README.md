@@ -68,13 +68,29 @@ PROJECT1/
 
 ## 🔑 Demo & Test Credentials
 
-The database seeding script configures three main roles with password **`demo123`**:
+The database seeding script configures multiple accounts with the default password **`demo123`**:
 
-| Role | Email Login | Password | Description |
+### 🛡️ System Administrators
+| Name | Email Login | Password | Location |
 | :--- | :--- | :--- | :--- |
-| **🛡️ System Admin** | `admin@demo.com` | `demo123` | Total platform overview and account moderation |
-| **🏢 Agency Owner** | `rajesh@demo.com` | `demo123` | Mumbai agency owner listing 6 vehicles |
-| **👤 Customer** | `customer@demo.com` | `demo123` | Standard user for browsing and booking |
+| Admin User | `admin@demo.com` | `demo123` | Mumbai |
+
+### 🏢 Rental Agency Owners
+| Name | Email Login | Password | Location | Agency Partner Brand |
+| :--- | :--- | :--- | :--- | :--- |
+| Rajesh Kumar | `rajesh@demo.com` | `demo123` | Mumbai | Rajesh Motors Rentals |
+| Priya Sharma | `priya@demo.com` | `demo123` | Bangalore | Bangalore Drive Hub |
+| Amit Verma | `amit@demo.com` | `demo123` | Delhi | Delhi Wheels Co. |
+
+### 👤 Customers
+| Name | Email Login | Password | Location |
+| :--- | :--- | :--- | :--- |
+| Rohan Mehta | `customer@demo.com` | `demo123` | Mumbai |
+| Ananya Iyer | `ananya@demo.com` | `demo123` | Bangalore |
+| Karthik Reddy | `karthik@demo.com` | `demo123` | Hyderabad |
+| Sneha Patel | `sneha@demo.com` | `demo123` | Pune |
+| Vikram Singh | `vikram@demo.com` | `demo123` | Delhi |
+| Divya Nair | `divya@demo.com` | `demo123` | Chennai |
 
 ---
 
