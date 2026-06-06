@@ -80,8 +80,8 @@ export default function ManageUsers() {
                   initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: i * 0.04 }}>
                   <td>
                     <div className="flex items-center gap-2.5">
-                      <img src={`https://ui-avatars.com/api/?name=${encodeURIComponent(u.name)}&background=4f46e5&color=fff`}
-                        alt={u.name} className="w-8 h-8 rounded-full" />
+                      <img src={u.avatar || `https://ui-avatars.com/api/?name=${encodeURIComponent(u.name)}&background=4f46e5&color=fff`}
+                        alt={u.name} className="w-8 h-8 rounded-full object-cover" />
                       <div>
                         <p className="font-semibold text-sm" style={{ color: 'var(--text-primary)' }}>{u.name}</p>
                         <p className="text-xs font-mono" style={{ color: 'var(--text-muted)' }}>#{u._id?.slice(-6)}</p>

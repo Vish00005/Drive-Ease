@@ -19,7 +19,7 @@ const AgencySchema = new mongoose.Schema(
       type: String,
       default: 'Mumbai',
     },
-    logo: { type: String, default: '' },
+    logo: { type: String, default: 'https://cdn-icons-png.flaticon.com/512/906/906343.png' },
     status: {
       type: String,
       enum: ['pending', 'approved', 'suspended'],

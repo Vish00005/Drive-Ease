@@ -35,7 +35,7 @@ const UserSchema = new mongoose.Schema(
     },
     phone:    { type: String, default: '' },
     location: { type: String, default: '' },
-    avatar:   { type: String, default: '' },
+    avatar:   { type: String, default: 'https://cdn-icons-png.flaticon.com/512/149/149071.png' },
     bio:      { type: String, default: '', maxlength: 300 },
     agencyId: {
       type: mongoose.Schema.Types.ObjectId,

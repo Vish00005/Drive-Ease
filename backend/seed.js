@@ -26,24 +26,24 @@ const daysFromNow = (n) => {
 
 /* ─── Static data ─── */
 const AGENCY_DATA = [
-  { name: 'Rajesh Motors Rentals',  description: 'Premium rentals in Mumbai since 2015.', phone: '+91 98765 43210', email: 'rajesh@motors.com',  location: 'Mumbai',    rating: 4.7, totalReviews: 312 },
-  { name: 'Bangalore Drive Hub',    description: 'Top-rated service in Bangalore.', phone: '+91 90876 54321', email: 'info@drivehub.in',      location: 'Bangalore', rating: 4.5, totalReviews: 218 },
-  { name: 'Delhi Wheels Co.',       description: 'Affordable rentals across Delhi NCR.',  phone: '+91 88765 32109', email: 'support@delhiwheels.com', location: 'Delhi', rating: 4.3, totalReviews: 176 },
+  { name: 'Rajesh Motors Rentals',  description: 'Premium rentals in Mumbai since 2015.', phone: '+91 98765 43210', email: 'rajesh@motors.com',  location: 'Mumbai',    rating: 4.7, totalReviews: 312, logo: 'https://cdn-icons-png.flaticon.com/512/3061/3061341.png' },
+  { name: 'Bangalore Drive Hub',    description: 'Top-rated service in Bangalore.', phone: '+91 90876 54321', email: 'info@drivehub.in',      location: 'Bangalore', rating: 4.5, totalReviews: 218, logo: 'https://cdn-icons-png.flaticon.com/512/4812/4812244.png' },
+  { name: 'Delhi Wheels Co.',       description: 'Affordable rentals across Delhi NCR.',  phone: '+91 88765 32109', email: 'support@delhiwheels.com', location: 'Delhi', rating: 4.3, totalReviews: 176, logo: 'https://cdn-icons-png.flaticon.com/512/2760/2760824.png' },
 ];
 
 const AGENCY_OWNERS = [
-  { name: 'Rajesh Kumar', email: 'rajesh@demo.com', password: 'demo123', location: 'Mumbai'    },
-  { name: 'Priya Sharma', email: 'priya@demo.com',  password: 'demo123', location: 'Bangalore' },
-  { name: 'Amit Verma',   email: 'amit@demo.com',   password: 'demo123', location: 'Delhi'     },
+  { name: 'Rajesh Kumar', email: 'rajesh@demo.com', password: 'demo123', location: 'Mumbai',    avatar: 'https://cdn-icons-png.flaticon.com/512/3177/3177440.png' },
+  { name: 'Priya Sharma', email: 'priya@demo.com',  password: 'demo123', location: 'Bangalore', avatar: 'https://cdn-icons-png.flaticon.com/512/3177/3177465.png' },
+  { name: 'Amit Verma',   email: 'amit@demo.com',   password: 'demo123', location: 'Delhi',     avatar: 'https://cdn-icons-png.flaticon.com/512/3177/3177440.png' },
 ];
 
 const CUSTOMERS = [
-  { name: 'Rohan Mehta',   email: 'customer@demo.com', password: 'demo123', location: 'Mumbai'    },
-  { name: 'Ananya Iyer',   email: 'ananya@demo.com',   password: 'demo123', location: 'Bangalore' },
-  { name: 'Karthik Reddy', email: 'karthik@demo.com',  password: 'demo123', location: 'Hyderabad' },
-  { name: 'Sneha Patel',   email: 'sneha@demo.com',    password: 'demo123', location: 'Pune'      },
-  { name: 'Vikram Singh',  email: 'vikram@demo.com',   password: 'demo123', location: 'Delhi'     },
-  { name: 'Divya Nair',    email: 'divya@demo.com',    password: 'demo123', location: 'Chennai'   },
+  { name: 'Rohan Mehta',   email: 'customer@demo.com', password: 'demo123', location: 'Mumbai',    avatar: 'https://cdn-icons-png.flaticon.com/512/3177/3177440.png' },
+  { name: 'Ananya Iyer',   email: 'ananya@demo.com',   password: 'demo123', location: 'Bangalore', avatar: 'https://cdn-icons-png.flaticon.com/512/3177/3177465.png' },
+  { name: 'Karthik Reddy', email: 'karthik@demo.com',  password: 'demo123', location: 'Hyderabad', avatar: 'https://cdn-icons-png.flaticon.com/512/3177/3177440.png' },
+  { name: 'Sneha Patel',   email: 'sneha@demo.com',    password: 'demo123', location: 'Pune',      avatar: 'https://cdn-icons-png.flaticon.com/512/3177/3177465.png' },
+  { name: 'Vikram Singh',  email: 'vikram@demo.com',   password: 'demo123', location: 'Delhi',     avatar: 'https://cdn-icons-png.flaticon.com/512/3177/3177440.png' },
+  { name: 'Divya Nair',    email: 'divya@demo.com',    password: 'demo123', location: 'Chennai',   avatar: 'https://cdn-icons-png.flaticon.com/512/3177/3177465.png' },
 ];
 
 const makeVehicles = (agencyId, location) => [
@@ -84,7 +84,7 @@ async function seed() {
     await Promise.all([User.deleteMany(), Agency.deleteMany(), Vehicle.deleteMany(), Booking.deleteMany()]);
 
     /* Admin */
-    const admin = await User.create({ name: 'Admin User', email: 'admin@demo.com', password: 'demo123', role: 'admin', status: 'active', location: 'Mumbai' });
+    const admin = await User.create({ name: 'Admin User', email: 'admin@demo.com', password: 'demo123', role: 'admin', status: 'active', location: 'Mumbai', avatar: 'https://cdn-icons-png.flaticon.com/512/2945/2945361.png' });
     console.log('✅ Admin:', admin.email);
 
     /* Agency owners */
